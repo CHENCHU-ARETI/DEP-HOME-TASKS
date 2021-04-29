@@ -1,0 +1,154 @@
+body {
+  margin: 0px;
+}
+
+.header_container {
+  background-color: #0e2843;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header_title {
+  text-align: center;
+  background-color: #ffffff;
+  font-family: "TimesRoman";
+  line-height: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #000000;
+}
+
+.title_style {
+  font-family: "TimesRoman";
+  font-size: 24px;
+}
+
+.subtitle_style {
+  font-family: "TimesRoman";
+  color: #808080;
+}
+.menu_container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #808080;
+}
+
+.category_style {
+  font-weight: bold;
+  font-family: "TimesRoman";
+}
+
+.dropdown_style {
+  font-size: 16px;
+  font-family: "TimesRoman";
+  width: 200px;
+  padding: 6px;
+  border: 1px solid #000000;
+}
+
+.head_style {
+  font-size: 26px;
+  font-family: "TimesRoman";
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.input_email {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+.subscribe_button {
+  font-family: "TimesRoman";
+  color: #ffffff;
+  background-color: #0e2843;
+  padding: 10px;
+  border: 1px #ffffff;
+  cursor: pointer;
+}
+
+.news_item {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.img_style {
+  padding-top: 30px;
+  padding-right: 20px;
+  width: 160px;
+  height: 120px;
+}
+
+.news_info {
+  margin-top: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  line-height: 18px;
+}
+
+.news_title {
+  font-size: 22px;
+  font-family: "TimesRoman";
+}
+
+.news_subtitle {
+  font-family: "TimesRoman";
+}
+
+.bolded {
+  font-weight: bolder;
+}
+
+.news_description {
+  font-family: "TimesRoman";
+  text-align: justify;
+}
+
+.continue_button {
+  align-self: flex-start;
+  background-image: #008000;
+  color: #000000;
+  padding: 8px;
+  font-family: "TimesRoman";
+  font-weight: bold;
+  border: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.footer_container {
+  color: #ffffff;
+  font-family: "TimesRoman";
+  text-align: center;
+  background-color: #0e2843;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+}
+@media screen and (max-width: 736px) {
+  .news_item {
+    flex-direction: column;
+    margin-right: 100px;
+  }
+  .menu_container {
+    flex-direction: column;
+  }
+  .head_style {
+    order: 1;
+  }
+}
