@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>YouTube Search</title>
+</head>
+
+<body>
+    <header class="header">
+        <img style="order: 1" src="./logo.jpg" class="logo" alt="YouTube Search">
+        <div style="order: 2">
+            <input class="searchInput" type="text" id="search" placeholder="Search">
+            <button class="submitButton" type="submit" id="searchButton"><em class="fa fa-search"></em></button>
+        </div>
+    </header>
+    <div id="searchResult" class="searchResult"></div>
+    <div id="paginationController" class="pagination"></div>
+
+    <template id="videoTemplate">
+        <div id="videos" class="videoCard">
+            <img id="thumbnail" alt="thumbnail" />
+            <iframe id="videoPreview" width="100%" height="50%" margin="10px" frameborder="0" src=""></iframe>
+            <div id="videoDetails">
+                <a id="videoTitle" href="" target="blank"></a>
+                <p id="videoDescription"></p>
+                <div class="details">
+                    <p id="channelTitle"></p>
+                    <p id="publishedOn"></p>
+                    <p id="views"></p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+    <template id="paginationTemplete" class="pageNumbers">
+        <button class="page" id="page"></button>
+    </template>
+
+    <script src="./src/script.js"></script>
+    <script src="./src/videoDetailsProcess.js"></script>
+    <script src="./src/pagenation.js"></script>
+    <script src="./src/client.js"></script>
+    <script src="./src/utils.js"></script>
+
+</body>
+
+</html>
