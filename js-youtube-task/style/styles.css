@@ -1,0 +1,118 @@
+.header{
+    display: flex;
+    position: relative;
+    padding: 0px;
+    background: white;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    float: left;
+    left: 0px;
+    padding: 20px;
+    margin-left: 0;
+    border-radius: 40px;
+    border: 10px;
+    border-color: black;
+}
+
+.searchInput{
+    position: center;
+    margin-left: 10px;
+    font: 14pt Verdana;
+    color: black;
+    background-color: rgb(231, 226, 226);
+    height: 40px;
+    width: 600px;
+
+}
+
+.submitButton{
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    line-height: 18px;
+}
+
+.searchResult{
+    overflow: scroll;
+    justify-content: space-between;
+    display: -webkit-box;
+
+}
+
+.videoCard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 28%;
+    height: 380px;
+    margin: 30px;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 50px;
+
+}
+
+.page {
+    margin: 10px;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 30px;
+}
+.pageNumbers{
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+body{
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.details p {
+     display: inline;
+     font-family: 'Times New Roman', Times, serif; 
+     
+}
+@media screen and (max-width: 700px){
+    .header{
+        flex-direction: column;
+    }
+    .logo{
+        display: none;
+    }
+    .searchInput{
+        width:60%;
+        justify-content: center;
+    }
+    .videoCard{
+        width: 70%;
+        height: 500px;
+    }
+    .details p {
+        display: inline; 
+   }
+   .searchResult{
+     display: flex;
+    flex-direction: column;
+
+}
+}
