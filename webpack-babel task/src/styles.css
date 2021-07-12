@@ -1,0 +1,108 @@
+.header {
+    display: flex;
+    padding: 0px;
+    background: rgb(12, 12, 70);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 100%;
+  
+  }
+.logo{
+    border: 2px solid red;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    color: rgb(65, 65, 158);
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.logo > h2{
+    margin-top: 6px;
+    font-family: 'Audiowide';
+}
+.logo > p{
+        margin-top:-15px;
+        font-family: 'Audiowide';
+} 
+body{
+    margin: 0;
+}
+.button{
+    text-align: center;
+    padding: 10px;
+}
+
+.submitButton{
+    width:auto;
+    padding: 10px;
+    border: 2px solid rgb(31, 26, 17);
+    border-radius: 40px;
+    background-color: rgb(12, 12, 70);
+    color: aliceblue;
+}
+
+.newsCard{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+.newsDescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    height: 80%;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.borderLine{
+    border-bottom: 1px solid rgb(189, 173, 173);
+}
+
+.searchResult{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+}
+
+.details p {
+    display: inline; 
+}
+
+a:link, a:visited {
+    background-color: rgb(12, 12, 70);
+    border-color: rgb(17, 1, 1);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
+    margin: 10px;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(145, 146, 243);
+  }
+
+  .footer{
+    bottom: 0%;
+    display: none;
+    position: sticky;
+    background: rgb(12, 12, 70);
+    text-align: center;
+    color: white;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

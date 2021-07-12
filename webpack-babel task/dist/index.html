@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <h2>NEWS BLOG</h2>
+      <p><small>WORLDWIDE NEWS</small></p>
+    </div>
+  </header>
+  <div class="button">
+    <button class="submitButton" type="submit" id="getNewsButton">GET HEADLINES</button>
+  </div>
+  <div id="searchResult" class="searchResult"></div>
+
+  <template id="newsTemplate">
+    <div id="news" class="newsCard borderLine">
+      <div style="order: 1">
+        <img id="thumbnail" alt="thumbnail" class="image" />
+      </div>
+      <div id="newsDetails" class="newsDescription" style="order: 2">
+        <h2 id="newsTitle"></h2>
+        <div class="details">
+          <p id="source"></p>
+          <p id="author"></p>
+          <p id="publishedAt"></p>
+        </div>
+        <p id="newsContent" style="display: none;"></p>
+        <p id="newsDescription"></p>
+        <a id="contueButton" target="_blank" href="">Continue Reading</a>
+      </div>
+    </div>
+  </template>
+
+  <footer id="footer" class="footer">
+    <p>@ News feed 2021</p>
+  </footer>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
